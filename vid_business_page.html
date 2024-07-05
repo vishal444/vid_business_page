@@ -1,56 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frindi</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
+
         header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
         nav {
-            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
+
         nav ul {
             list-style-type: none;
             padding: 0;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            margin: 0;
         }
+
         nav li {
-            margin-right: 10px;
+            margin: 0 15px;
         }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
         footer {
+            background-color: #333;
+            color: white;
             text-align: center;
-            margin-top: 20px;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Welcome to Frindi</h1>
-        <p>Social Connection Application.</p>
+        <p>Social Connection Application</p>
     </header>
 
-    <section>
-        <h2>About Us</h2>
-        <p>An application that lets people connect and chat using video calls.</p>
-    </section>
-    <section>
-        <h2>Pricing</h2>
-        <p>The price of the app is 100 rupees to connect with another user.</p>
-    </section>
-    <section>
-        <h2>Contact Us</h2>
-        <p>Email: vishaljoseana@gmail.com</p>
-        <p>Phone: +91 7829661060</p>
-        <p>Address: Nellappara, 11-72b building, Karimkunnam P.O, PIN- 685586, Kerala, India</p>
-    </section>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>Frindi is an application that lets people connect and chat using video calls.</p>
+        </section>
+        <section>
+            <h2>Services/Products</h2>
+            <p>We provide video sessions between users on the platform to socialize.</p>
+        </section>
+        <section>
+            <h2>Pricing</h2>
+            <p>The price of the app is 100 rupees to connect with another user.</p>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:vishaljoseana@gmail.com">vishaljoseana@gmail.com</a></p>
+            <p>Phone: <a href="tel:+917829661060">+91 7829661060</a></p>
+            <p>Address: Nellappara, 11-72b building, Karimkunnam P.O, PIN- 685586, Kerala, India</p>
+        </section>
+    </main>
 
     <nav>
         <ul>
@@ -59,8 +124,7 @@
             <li><a href="https://vishal444.github.io/vid_business_page/vid_customer_support.html">Customer Support</a></li>
             <li><a href="https://vishal444.github.io/vid_business_page/vid_privacy_policy.html">Privacy Policy</a></li>
             <li><a href="https://vishal444.github.io/vid_business_page/vid_cancellation_and_refund_policy.html">Cancellation and Refund Policy</a></li>
-            <!-- <li><a href="https://vishal444.github.io/vid_business_page/vid_shipping_and_delivery.html">Shipping and Delivery</a></li> -->
-            <li><a href="https://vishal444.github.io/vid_business_page/vid_account_deletion.html">Account deletion</a></li>
+            <li><a href="https://vishal444.github.io/vid_business_page/vid_account_deletion.html">Account Deletion</a></li>
         </ul>
     </nav>
 
@@ -68,4 +132,5 @@
         <p>&copy; 2024 Frindi. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
